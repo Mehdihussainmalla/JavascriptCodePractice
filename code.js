@@ -972,12 +972,228 @@
 // console.log(d)  //.....tatal output is: 2000.0010
 // let x = 0.2 + 0.1;
 // console.log(x)
-// console.log(Math.trunc(x))
+// // console.log(Math.trunc(x))
 // console.log(Math.round(x))
 
+// const x="100";    //............on strings the arithmetic operations can be performed........//
+// const y="10";
+// console.log(typeof x+y)
+// console.log(typeof(x/y))
+// console.log( x*y)
+// console.log( x%y==1)
+
+// const a="100"  //..........NaN  when a illegal string try to do arithmetic operations............//                      
+// const b="abc"
+// const c=a*b;
+// console.log(c)
+// // console.log(typeof Infinity)  //.............infinity returns a number..................//
+// let x = 500;  //...........here x is a vaiarble        
+// let y = new Number(500)//..............y is assigned to an number function..........//
+// console.log(x === y)  //...................using strict operator function and varable cannot be the same
+// console.log(x == y)  //............using looosley operator the function and variale passing same value are equal
+
+// const x= "10"
+// console.log(typeof Number(x))
+// const xy= "10.00"
+// console.log(typeof  parseInt(xy))  //..........parseInt tries to convert string into numbers
+// const load="1230.1"
+// console.log(parseFloat (load))  //.........parseFloat returns string into numbers and return the number..////////
+
+// let x=Number.MAX_VALUE;  //................Number.MAX_VALUE returns the maxiumum value of javascript 
+// console.log(x)    //..............output is 1.7976931348623157e+308................//
+// let y=Number.MIN_VALUE;
+// console.log(y)
+//....................ARRAYS..............................//
+
+// const data =["lasha", "takaalum","sham","kufa"]
+// const fun=()=>{
+// console.log(data)
+// console.log(data[2])
+// data[4]="Khoharaam"   //.........element added into any array using array name  with index number....//
+// console.log(data)
+// }
+// fun()
+// const check={ firsName: "Mehdi", middleName: "Hussain", lastName: 'malla', residence: 'Kashmir Valley' }
+// console.log(check.firsName)  //..............object
+
+// const data = [{ firsName: "Mehdi", middleName: "Hussain", lastName: 'malla', residence: 'Kashmir Valley' }]
+// data.unshift({name:"hussssssaaainn"})
+// // console.log(data)
+// data.push({martial_status:'single'})
+// // console.log(data)
+// // data.shift()
+// // console.log(data)
+// // data.pop()
+// console.log(data)
+// console.log(data)  //...........array of objects...........//
+// console.log(data[0].firsName)
+// data[0].profession="developer"
+// // console.log(data)
+// // const userList=student.map((value)=>({...value, active:'restorating'}))
 
 
+// data.forEach((value)=>{
+//      value.lastRight="check for khooofiyat"
+// })
+// // console.log(data)
 
+// let newArray= data.map((value)=>({...value,active:"watan"
+
+// }))
+
+// console.log(newArray)
+// console.log(newArray[0].firsName)
+// const data = [{ firsName: "Mehdi", middleName: "Hussain", lastName: 'malla', residence: 'Kashmir Valley' }]
+// data.unshift({ name: "hussssssaaainn" })
+// console.log(data)
+// data.push({ martial_status: 'single' })
+// console.log(data)
+// data.shift()
+// console.log(data)
+// data.pop()
+// console.log(data)
+
+// data.splice(0,2)
+// console.log(data)
+
+// data.filter((item, index)=>{
+//      console.log("the items are :",item, index)
+// })
+// const arrayData = ["welcome", "great", "distraction", "jashn", "cordinate", "manage"]
+// const filter = arrayData.filter(words => words.length <= 5)
+// console.log(filter)
+
+// const arrayList= arrayData.length
+// console.log(arrayList)
+// arrayData.forEach((element,index) => {
+//      console.log(element, index)
+// });
+
+// function myFunction(arrayData)
+// {
+// arrayData.forEach(element => {
+//      console.log(element)
+// });
+// }
+// myFunction(arrayData)
+
+
+//..................using for each and callback function to return the elements of an array.............//
+// arrayData.forEach(myFunction)
+// function myFunction(value){
+// console.log(value)
+//  }
+// console.log("you got little bit",arrayData[2])
+
+// const datas =arrayData[1]
+// console.log("you are",datas)
+
+
+// const check=(arrayData)=>{
+
+// setTimeout(() => {
+//      console.log("they got high tempered ", arrayData[2])
+// }, 3000);
+// console.log(`you are a${arrayData[1]} personality i ever seen !` )
+
+// }
+// check(arrayData)
+// const points = new Array(4, "welcome")  //...........using cumnstructor way to make new array..........//
+// console.log(Array.isArray(points))  //...............Array.isArray returns whether the array is true or not 
+// //.................so boolean value is returned......................///
+// // console.log(points)
+
+// console.log(points instanceof Array)  //.................istanceof also returns whether array exixts or not...////
+
+//............................sorting....................................//
+//..............sorting in alphabetic order  from left to right.................//
+// const data = ["welcome", "back", "arrow", "divide", "calculate", "eatable"]
+// data.sort()
+// console.log(data)
+// data.reverse()  //..............reverse sort from right to left............//
+// console.log(data)
+
+
+//....................sorting in alphabetic squence not like numbers..............//
+// const newData= ()=>{
+// const numbering=[20,15,45,87,01,54,25,52,11,12,21]
+// numbering.sort()
+// return numbering
+// }
+// console.log(newData())
+
+//...................sorting in ascending order.............//
+// const numbering = [20, 15, 45, 87, 01, 54, 25, 52, 11, 12, 21]
+// numbering.sort(function (a, b) {   //.........this function is a comparison function...........//
+//      return a - b;
+// })
+// console.log(numbering)
+// //..............reverse sorting .............//
+// numbering.sort(function (a, b) {
+//      return b - a;
+// })
+// // console.log(numbering)
+// const numbering = [20, 15, 45, 87, 01, 54, 25, 52, 11, 12, 21]
+// // console.log(Math.max.apply(null, numbering))
+
+//...........min and max value find out methods................//
+// const minValue = (value) => {
+//      console.log(value)
+//      setTimeout(() => {
+//           const min = Math.min.apply(null, value)
+//           console.log(min)
+
+//      }, 3000);
+
+//      const max = Math.max.apply(null, value)
+//      return max;
+// }
+// console.log(minValue(numbering))
+//.................forEach iteration of an array.....................//
+// const numbering = [20, 15, 45, 87, 01, 54, 25, 52, 11, 12, 21]
+
+// const data=numbering.forEach((element,index )=> {
+//      console.log(` ${index} position elements in an arrray is ${element}`)
+
+// // });
+// numbering.map((item,index)=>{
+//     console.log(index,item)   
+// })
+
+//..............how to modify the elements from an array (like by multiple divide add,etc)..............//
+// const numbering = [20, 15, 45, 87, 01, 54, 25, 52, 11, 12, 21]
+
+// const data=numbering.forEach(element => {
+//    console.log(element *10)     
+// });
+// console.log(Math.floor(numbering[1]))//
+// const myFunction=(value)=>{
+//      // console.log("this is the ",value)
+//      return value + 2
+// }
+// const numberList=numbering.map(myFunction);
+// console.log(numberList)
+
+// const numbering = [20, 15, 45, 87, 01, 54, 25, 52, 11, 12, 21]
+
+// console.log(Math.floor(1.8))
+
+// console.log(Math.floor(Math.random()*101))  //................Math.random() function is used mto return any random number
+
+//.............another way of callback function...////////
+const myFunction = (addition) => {
+     console.log("addition of two numbers is :", addition)
+
+}
+
+const addfunction = (num1, num2) => {
+     let sum = num1 * num2
+     return sum
+
+}
+
+const result = addfunction(5, 5)
+myFunction(result)
 
 
 
