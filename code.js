@@ -812,27 +812,173 @@
 // conditional("Mashallah",check,checkList)
 
 
-const data = [10, 21, 23, 14, 18, 11]
-console.log(data)
+// const data = [10, 21, 23, 14, 18, 11]
+
+// console.log(data)
 // const numbers = ()=>{
 //      const odds =data.filter(num=>{
 //           return num%2===0
 //      })
 //      console.log(odds)
 // }
-// numbers()
-const even = () => {
-     const numbers = data.map((item) => {
-          console.log(item)
-          if (item % 2 === 0) { return item }
-          else {
-               return null
-          }
-     })
-     console.log(numbers)
+// // numbers()
+// const even = () => {
+//      const numbers = data.map((item) => {
+//           console.log(item)
+//           if (item % 2 === 0 && item %2!=1)
 
-}
-even()
+//           { return item}
+//           // else {
+//           //      return null
+//           // }
+//      })
+//      console.log(numbers)
+
+// }
+// even()
+
+// let x;
+// for (x=0; x<6; ++x){   //pre incremenet process
+//      console.log(x)
+// }
+
+
+// for (x=10; x>1; --x){   // ......pre decrement process and shows reverse result
+//      console.log(x)
+// }
+
+
+// const x= Math.pow(4,2)
+// console.log(x)
+
+// let y=10
+// y%=5
+// console.log(y)
+// let x= undefined;
+// let y= null;
+
+// // if(x==y){
+//      console.log(true) //........loose equality operator 
+// // }
+
+
+// if(x===y){    //.........strict equality operator
+//      console.log(true)
+// }
+// else {
+//      console.log(false)
+// }
+
+
+// const data="12";
+// const DATA=12;
+// if(data==DATA)
+// {
+//      console.log("the result is :",true)
+// }
+
+
+// if (data===DATA){
+//      console.log("the result is :",true)
+
+// }
+// else {
+//      console.log("the result is :",false)
+// }
+
+// const sum = data+DATA;
+// const check =String (sum)
+// console.log(typeof check)
+
+// let x = "40" + "10"
+// console.log(x)
+// const person = {
+//      name: 'mehdi ', lastName: 'malla', age: 24, residence: "kashmir"
+// }
+// console.log(person)
+
+// // console.log(person.age)
+// console.log(`i am`,person.age ,"years old")
+// const str = "mehdi ,hussain, malla";
+// console.log(str.slice(1, 15)) //...........slice contains two parameters (a,b) here a is starting part and b is ending part
+// //........if we pass only one parameter the method will return all the rest string..................//
+// console.log(str.indexOf("hussain"))
+
+// const string = "  Hello world!!"
+// console.log(string)
+// console.log(string.trim())  //..............The trim() method removes whitespace from both sides of a string. 
+
+// console.log(string.replace(/^\s+|\s+$/gm, ''))  //.............replace method is also used to remove the white space to a string
+
+// const splitProcess = () => {
+
+//      const details = "how are you today , my dear friend"
+//      const x = details.split(" ")   //........split() method is used to return an array of strings that is formed after the splitting method
+//      console.log(x)
+// }
+// splitProcess()
+
+//.....................practice for call back functions.................//
+
+// const myFunction = (num,callback,callbackSecond)=>{
+//      callbackSecond(10,40)
+//      setTimeout(() => {
+//          console.log(num*num)
+
+//      }, 3000);
+// console.log(callback(2,2))
+// }
+
+// const secondFunction = (a,b)=>{
+//      const d= a*b
+//      return d
+// }
+
+
+// function result(add,sub){
+//   if(add)
+//   {
+//        console.log(add+3)
+//   }
+//   else{
+//        console.log(sub-2)
+//   }
+// }
+
+// myFunction(40,secondFunction,result)
+// let text =
+//      `The quick
+// brown fox
+// jumps over
+// the lazy `;
+// let x = "dog"
+// console.log(text, `${x}`)   // ........string literals practice.............////
+
+// let firstName= "Mehdi Hussain"
+// let lastName='Malla';
+// let fullName= `My full name is ${firstName} ${lastName}`;
+// console.log(fullName)
+//.........how to print extra large numbers using scientific notations...///
+// ........  only e alphabet is written for scinetific no other alphabets.......//
+//........... e represents zero (0) that is how mant zeroes..//////////
+
+// const x=2e3;
+// const y=10e4;
+// const d= x+y;
+// console.log(d)
+// const x=2e3;  // ......value is 2000
+// const y=10e-4;  // ..... value is 0.0010
+// const d= x+y;
+// console.log(d)  //.....tatal output is: 2000.0010
+// let x = 0.2 + 0.1;
+// console.log(x)
+// console.log(Math.trunc(x))
+// console.log(Math.round(x))
+
+
+
+
+
 
 
 
