@@ -520,33 +520,72 @@
 // //     dayName = 'Invalid day';
 // // }
 
-// // for (let i = 0; i < 10; i++) {
-// //      console.log(`object ${i}`)
-// // }
+// for (let i = 0; i < 10; i++) {
+//      console.log(`object ${i}`)
+//  }
+// const check=["employee", "worker", "staff", "office boy"]
+// const data = check
+// for (let i = 0; i <= data.length - 1; i++) {
+//      console.log(data)
+// }
 
-// // const data = ["employee", "worker", "staff", "office boy"]
-// // for (let i = 0; i <= data.length - 1; i++) {
-// //      console.log(data)
-// // }
+// function even(i) {
+//      for ( i = 1; i < 40; i++) {
+//           if (i % 2 == 0) {
+//                console.log("print even numbers ", i)
+//           } else if(i%2===1)
+//           {
+//                console.log("print odd numbers ", i)
+//           }
+//           else {
+//                console.log("not a number")
+//           }
+//      }
+// }
+// even(50)
+// .......reduce method.............//
+// const reduce = [140, 120, 4]
+// console.log(reduce.reduce(myFunc))
+//.............reduce function another methoad.........//
+// function myFunc(total, num) {  //......here total is previous value, and num is current value../
+//      return total + num;   //.........reducer function for the sum of the array and return the single value..//
+// }
 
-// // function even() {
-// //      for (let i = 1; i < 20; i++) {
-// //           if (i % 2 == 0) {
-// //                console.log("print even numbers ", i)
-// //           }
-// //      }
-// // }
-// // even()
+// const checkReduce = (myFunc, reduce) => {
+//      return reduce.reduce(myFunc)
+// }
+// console.log(checkReduce(myFunc, reduce))
+// function myFunc(total, num) {  //......here total is previous value, and num is current value../
+//      return total * num;        //.............all arithmetic operations can be performed ............//
+// }
+
+// const checkReduce = (myFunc, reduce) => {
+//      return reduce.reduce(myFunc)
+// }
+// console.log(checkReduce(myFunc, reduce))
 
 
-// // function odd() {
-// //      for (let i = 0; i < 20; i++) {
-// //           if (i % 2 == 1) {
-// //                console.log("print odd numbers ", i)
-// //           }
-// //      }
-// // }
-// // odd()
+///...........here in below code the reduce function is used for the array of arrays
+// const reduce = [[140, 120,],[14,10],[21,11]]
+//  let check=reduce.reduce((previous, current)=>previous.concat(current))
+//  console.log(check)
+
+
+// function odd() {
+//      for (let i = 1; i < 20; i++) {
+//           if (i % 2 == 1) {
+//                console.log("print odd numbers ", i)
+//           }
+//           else if(i%2===0)
+//           {
+//                console.log("even numbers are ",i)
+//           }
+//           else{
+//                console.log("error occurred")
+//           }
+//      }
+// }
+// odd()
 
 // //   (%) this is modulo operator works as returning the remainder to check whether number is even or odd  
 // // function add (){
@@ -568,50 +607,51 @@
 // // // }
 
 
-// // let data=[1,5,4,1,78,41]  //...............(for in) method works same as for loop with minimal code
-// // // for(let x in data){
-// // //      console.log(" object",data)
-// // // }
+// let data = [1, 5, 4, 1, 78, 41]  //...............(for in) method works same as for loop with minimal code
+// for (let x in data) {
+//      console.log(" object", data)
+// }
 
 // // for(let x of data){
 // //      console.log(" object",data)//  ................(for of) method is also used instead of for loop
 // // }
 
 
-// // while loop........//
+// while loop........//
 
-// // let i=1;
-// // while(i<10){
-// //      console.log("object ",i)
-// //      i++
-// // }
+// let i=1;
+// while(i<10){
+//      console.log("object ",i)
+//      i++
+// }
 
 // // // do while.....loop
 
 
-// // let num=0;
+// let num=0;
 
-// // do{
-// //      console.log("check",num)
-// //      num++;
+// do{
+//      console.log("check",num)
+//      num++;
 
-// // }
-// // while(num<10);
+// }
+// while(num<10);
 
-// // for (let i = 0; i < 10; i++) {
-// //      if (i == 3) {
-// //           continue;//.........continue keyword is used to skip the particular item 
-// //      }
-// //      console.log("object", i)
-// // }
+// for (let i = 0; i < 10; i++) {
+//      if (i ==3) {
+//           continue;//.........continue keyword is used to skip the particular item 
+//      }
+//      console.log("object", i)
+// }
 
-// // const data = ["we", "all", "are", "human", "beings",90]
-// // for (let i = 0; i < data.length - 1; i++)
-// //      if (i == 2) { continue }
-// // {
-// //      console.log(data)
-// // }
+// const data = ["we", "all", "are", "human", "beings",90]
+// for (let i = 0; i < data.length-1 ; i++){
+//      if (i == 2) { 
+//           continue 
 
+//      }
+//      console.log(i, data)
+// }
 
 
 // // const dataa=data.toString()
@@ -634,18 +674,18 @@
 //           y = 3;
 //      }
 //      return y * x
-
-
 // }
-// console.log(check(10))
-// function myFunction(a, b, c) {
+//  console.log(check(10))
+
+
+//  function myFunction(a, b, c) {
 //      if (c === undefined) {
 //           c = "malla"
 //      }
 //      firstName = a;
 //      secondName = b
 //      lastName = c
-//      return firstName + " " + secondName + " " + lastName
+//      return `${firstName} ${secondName} ${lastName}`
 
 
 // }
@@ -674,12 +714,12 @@
 //      return count
 // }
 // console.log(add())
-// console.log(add())
+// console.log(add())       
 
 // const myFunctions = () => {
 //      console.log("check nested function or callback function")
 //      let x = 10; let y = 20
-//      console.log(x * y)
+//      console.log(`${x} * ${y}  =`, x * y)
 
 // }
 
@@ -698,12 +738,12 @@
 //...............function callback code execution..................//
 
 // const friend2 = () => {
-//      console.log(`zahoor hardworking guy`)
+//      console.log(`zahoor is hardworking guy`)
 
 // }
 
 // const friend1 = (friend) => {
-//      console.log(`${friend} an intellectual guy`)
+//      console.log(`${friend} is an intellectual guy`)
 //      friend2()
 // }
 // friend1("Amir")
@@ -714,7 +754,7 @@
 
 
 // const friend1 = (name) => {
-//      console.log(`zahoor hardworking guy and his friend is ${name}`)
+//      console.log(`  zahoor are hardworking guy and his friend is ${name}`)
 
 // }
 // const friend2 = (friend, callback) => {
@@ -722,10 +762,10 @@
 //      callback("mehdi")
 
 // }
-// friend2("Amir",friend1)
+// friend2("Amir", friend1)
 
-// const add =(a,b)=>{
-//      console.log(a*b)
+// const shortMultiple =(a,b)=>{
+//      console.log("call back values are :",a*b)
 
 // }
 // const multiple = (c,callback)=>{
@@ -734,7 +774,7 @@
 //      callback(5,3)
 
 // }
-// multiple(10,add)
+// multiple(10,shortMultiple)
 
 // const waitingProcess = () => {
 //      console.log("waiting time will be 3 seconds")
@@ -748,7 +788,7 @@
 //      }, 3000);
 //      waitingProcess()
 // }
-// // time()
+//   time()
 // const process = (name, functionInvoke) => {
 //      console.log(`My name is ${name}`)
 //      let a = 10, b = 20;
@@ -757,6 +797,7 @@
 //      return c
 
 // }
+// console.log(process("mehdi",))
 // const address = (address, pincode) => {
 
 //      console.log(`My address is ${address}.
@@ -771,17 +812,17 @@
 // console.log(process("Mehdi", address))
 // const callBackFunction = (callback) => {
 //      setTimeout(() => {
-//           let c = 10*50
-//           console.log("the out put is :",c)
+//           let c = 10 * 50
+//           console.log("the out put is :", c)
 
-//      }, 3000);
+//      }, 2000);
 //      console.log("the grief in onees life matters when you realise for yourself")
-//     callback(153,5)
+//      callback(153, 5)
 // }
 
-// const   addfunction = (num1,num2) =>{
-//      let c= num1/num2
-//      console.log("the division of two numbers is :",c)
+// const addfunction = (num1, num2) => {
+//      let c = num1 / num2
+//      console.log("the division of two numbers is :", c)
 // }
 
 // callBackFunction(addfunction)
@@ -789,27 +830,27 @@
 
 //.............callback function using multiple functions............//
 
-// const conditional = (post,callbackFirst, callbackSecond)=>{
+// const conditional = (post, callbackFirst, callbackSecond) => {
 
 //      setTimeout(() => {
 //           console.log(`${post}`)
 
 //      }, 2000);
 
-//           callbackFirst("working ","enjoy it")
+//      callbackFirst("working ", "enjoy it")
 
-//           callbackSecond("do fast", "welcome back")
+//      callbackSecond("do fast", "welcome back")
 
 
 // }
 
-// const check = (process, success)=>{
+// const check = (process, success) => {
 //      console.log(`if done then ${success} if not then ${process}`)
 // }
-// const checkList = (processList, successList)=>{
+// const checkList = (processList, successList) => {
 //      console.log(`if done then ${successList} if not then ${processList}`)
 // }
-// conditional("Mashallah",check,checkList)
+//  console.log(conditional("Mashallah", check, checkList))
 
 
 // const data = [10, 21, 23, 14, 18, 11]
@@ -821,7 +862,21 @@
 //      })
 //      console.log(odds)
 // }
-// // numbers()
+// numbers()
+// const arrayList = [10, 21, 23, 14, 18, 11, 25,400,789,147]
+// const evenCheck=()=>{
+//      console.log(arrayList)
+
+//      const data= arrayList.filter(num=>{
+//         return  num %2===1
+//      })
+// console.log( data)
+// }
+// evenCheck()
+
+
+
+
 // const even = () => {
 //      const numbers = data.map((item) => {
 //           console.log(item)
@@ -1181,27 +1236,116 @@
 // console.log(Math.floor(Math.random()*101))  //................Math.random() function is used mto return any random number
 
 //.............another way of callback function...////////
-const myFunction = (addition) => {
-     console.log("addition of two numbers is :", addition)
+// const myFunction = (addition) => {
+//      console.log("addition of two numbers is :", addition)
 
-}
+// }
 
-const addfunction = (num1, num2) => {
-     let sum = num1 * num2
-     return sum
+// const addfunction = (num1, num2) => {
+//      let sum = num1 * num2
+//      return sum
 
-}
+// }
 
-const result = addfunction(5, 5)
-myFunction(result)
+// const result = addfunction(5, 5)
+// myFunction(result)
+
+//............how to solve arethmetic operations...............//
+// const arithmetics = {
+//      add: (a, b) => {
+//           return `${a} + ${b} = ${a + b}`;
+//      },
+//      subtract: (a, b) => {
+//           return `${a} -${b} = ${a - b}`
+//      },
+//      multiply: (a, b) => {
+//           return `${a}*${b} = ${a * b}`
+//      },
+//      divide: (a, b) => {
+//           return `${a}/${b} = ${a / b}`
+//      },
+// }
+
+
+// console.log(arithmetics.add(10, 20));
+// console.log(arithmetics.subtract(20, 10))
+// console.log(arithmetics.multiply(20, 10))
+// console.log(arithmetics.divide(20, 10))
+// const radius = [4, 10, 12, 3, 15]
+// const area = (radius) => {
+//      return Math.PI * radius * radius
+
+// }
+
+// const circumference = (radius) => {
+//      return Math.PI * 2 * radius
+// }
+
+// const diameter = () => {
+//      return Math.radius * 2;
+// }
+
+// const calculate = (radius, logic) => {
+//      const output = [];
+//      for (let i = 0; i < radius.length; i++) {
+//           output.push(logic(radius[i]));
+//      }
+//      return output;
+// }
+// console.log(calculate(radius, area))
+// console.log("the circumference having following radius are:", calculate(radius, circumference))
+// // console.log("the diameters are:",calculate (radius,diameter))
 
 
 
+// let newArr=radius.map((item)=>{
+//      const data=Math.PI*2*item
+//      console.log(data)
+//      return Math.PI*item*item
+// })
+// console.log("the area of a following radius are:::",newArr)
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+// const filter = words.filter(words => words.length <= 5)
+// console.log(filter)
+
+// const radius = [4, 10, 12, 3, 15]
+
+// const vote =(age)=>{
+//      if(age>=18)
+//      {
+//           console.log("vote permitted")
+//      }
+//      else {
+//           console.log("vote access denied")
+//      }
+
+// }
+// vote(14)
+
+// const myVote = (age)=>{
+//      return age>=18
+// }
 
 
+// function canVote(age) {
+//      return age >= 18;
+//  }
+
+//  function func() {
+//      var filtered = [10,14,12,10,46,43,23].filter(canVote);
+//      console.log((filtered));
+//  }
+// //  func();
+// const radius = [4, 10, 12, 3, 15]
 
 
+// const isEven =(value)=>{
+//  return value %2===0     
 
+// }
+// const filt=radius.filter(isEven)
+// console.log(filt)
 
 
 
