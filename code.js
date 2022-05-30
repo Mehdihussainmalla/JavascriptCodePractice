@@ -1423,35 +1423,72 @@
 //      }
 // })
 // console.log(finalList)
-let message = "Hello world!";
-let x = message.toUpperCase();
-console.log(x)
+// let message = "Hello world!";
+// let x = message.toUpperCase();
+// console.log(x)
 
-const data = ["welcome", "everyone", "fake"]
-// const data2=data.map(arr=>
-//      arr.toUpperCase())
-// console.log(data2)
+// const data = ["welcome", "everyone", "fake"]
+// // const data2=data.map(arr=>
+// //      arr.toUpperCase())
+// // console.log(data2)
 
-const arr = data.map((err) => {
+// const arr = data.map((err) => {
 
-     return err.toUpperCase()
-})
+//      return err.toUpperCase()
+// })
 
-console.log(arr)
+// console.log(arr)
 
-const  promises=new Promise(function(resolve,reject){
-     const x="Himalayan Mountain";
-     const y="Himalayan Mountains";
-     if(x==y){
-          resolve();          
+// const  promises=new Promise(function(resolve,reject){
+//      const x="Himalayan Mountain";
+//      const y="Himalayan Mountains";
+//      if(x==y){
+//           resolve();          
+//      }
+//      else{
+//           reject()
+//      }
+// })
+// promises.then((function (){
+//      console.log("ready to visit")
+// })).catch(function(){
+// console.log("not able to climb")
+// })
+
+
+// const string = "welcome, back, to,the poius home";
+// const newString = string.toUpperCase();
+// console.log(newString);
+// console.log(newString.slice(5))
+// console.log(newString.substr(4))
+
+// const fun=(...args)=>{
+//      let sum =0;
+//      for(let a of args){
+//           console.log(a)
+//      sum +=a
+
+//      }
+//      return sum
+// }
+// let x=fun(10,5,45,87)
+// console.log(x)
+
+const forIn = (...values) => {
+
+     let sum = 0;
+     for (let x in values) {
+          sum =sum+values[x]
      }
-     else{
-          reject()
-     }
-})
-promises.then((function (){
-     console.log("ready to visit")
-})).catch(function(){
-console.log("not able to climb")
-})
+     return sum
+
+}
+const addition = forIn(10, 20, 45, 70, 75)
+console.log(addition)
+
+
+//...............the difference between the for in and for of is that...
+// ..for in iterates the keys of the array or data
+//...while as the for of iterates the values of an array or data
+
 
