@@ -1067,36 +1067,36 @@
 // data[4]="Khoharaam"   //.........element added into any array using array name  with index number....//
 // console.log(data)
 // }
-// fun()
+//  fun()
 // const check={ firsName: "Mehdi", middleName: "Hussain", lastName: 'malla', residence: 'Kashmir Valley' }
 // console.log(check.firsName)  //..............object
 
 // const data = [{ firsName: "Mehdi", middleName: "Hussain", lastName: 'malla', residence: 'Kashmir Valley' }]
 // data.unshift({name:"hussssssaaainn"})
-// // console.log(data)
+// console.log(data)
 // data.push({martial_status:'single'})
-// // console.log(data)
+// console.log(data)
 // // data.shift()
-// // console.log(data)
-// // data.pop()
+// // // console.log(data)
+// data.pop()
 // console.log(data)
 // console.log(data)  //...........array of objects...........//
 // console.log(data[0].firsName)
-// data[0].profession="developer"
-// // console.log(data)
+//  data[0].profession="developer"
+//  console.log(data)
 // // const userList=student.map((value)=>({...value, active:'restorating'}))
 
 
 // data.forEach((value)=>{
 //      value.lastRight="check for khooofiyat"
 // })
-// // console.log(data)
+// console.log(data)
 
 // let newArray= data.map((value)=>({...value,active:"watan"
 
 // }))
 
-// console.log(newArray)
+//  console.log(newArray)
 // console.log(newArray[0].firsName)
 // const data = [{ firsName: "Mehdi", middleName: "Hussain", lastName: 'malla', residence: 'Kashmir Valley' }]
 // data.unshift({ name: "hussssssaaainn" })
@@ -1121,7 +1121,7 @@
 // const arrayList= arrayData.length
 // console.log(arrayList)
 // arrayData.forEach((element,index) => {
-//      console.log(element, index)
+//      console.log(index,element)
 // });
 
 // function myFunction(arrayData)
@@ -1182,12 +1182,18 @@
 // numbering.sort(function (a, b) {   //.........this function is a comparison function...........//
 //      return a - b;
 // })
-// console.log(numbering)
+
+
+// const numbers=[10,12,4,0,12,14,54,75,70]
+// numbers.sort(function(a,b){
+//      return a-b
+// })
+// console.log(numbers)
 // //..............reverse sorting .............//
-// numbering.sort(function (a, b) {
+// numbers.sort(function (a, b) {
 //      return b - a;
 // })
-// // console.log(numbering)
+// console.log(numbers)
 // const numbering = [20, 15, 45, 87, 01, 54, 25, 52, 11, 12, 21]
 // // console.log(Math.max.apply(null, numbering))
 
@@ -1206,11 +1212,13 @@
 // console.log(minValue(numbering))
 //.................forEach iteration of an array.....................//
 // const numbering = [20, 15, 45, 87, 01, 54, 25, 52, 11, 12, 21]
-
+//  numbering.sort(function(a,b){
+//       return a-b
+//  })
 // const data=numbering.forEach((element,index )=> {
 //      console.log(` ${index} position elements in an arrray is ${element}`)
 
-// // });
+//  });
 // numbering.map((item,index)=>{
 //     console.log(index,item)   
 // })
@@ -1236,8 +1244,8 @@
 // console.log(Math.floor(Math.random()*101))  //................Math.random() function is used mto return any random number
 
 //.............another way of callback function...////////
-// const myFunction = (addition) => {
-//      console.log("addition of two numbers is :", addition)
+// const myFunction = (multiply) => {
+//      console.log("multiplication of two numbers is :", multiply)
 
 // }
 
@@ -1250,7 +1258,7 @@
 // const result = addfunction(5, 5)
 // myFunction(result)
 
-//............how to solve arethmetic operations...............//
+//............how to solve arithmetic operations...............//
 // const arithmetics = {
 //      add: (a, b) => {
 //           return `${a} + ${b} = ${a + b}`;
@@ -1345,11 +1353,105 @@
 
 // }
 // const filt=radius.filter(isEven)
-// console.log(filt)
+// // console.log(filt)
+// const sideSquare=[10,24,14,2,5,78]
+//   const circumference = (sideSquare) => {
+//           return Math.PI * 2 * sideSquare
+//      }
+// const calculate = (sideSquare, logic) => {
+//      const output = [];
+//      for (let i = 0; i < sideSquare.length; i++) {
+//           output.push(logic(sideSquare[i]));
+//      }
+//      return output;
+// }
+// console.log(calculate(sideSquare,circumference))
 
 
 
+// const circleData = [5, 4, 8, 7, 9, 6, 5, 10]
+
+// const circleArea = (circleData) => {
+//      return Math.PI * circleData * circleData
+
+// }
+// const circumference =(circleData)=>{
+//      return Math.PI*2*circleData;
+// }
+
+// const area = (circleData, logic) => {
+
+//      let output = []
+//      for (let i = 0; i < circleData.length; i++) {
+
+//           output.push(logic(circleData[i]))
+//      }
+//      return output;
+// }
 
 
 
+// const arr1 = (area(circleData, circleArea))
+// console.log(arr1)
+// const arr2 = (area(circleData, circumference))
+// console.log(arr2)
+// // ............how to add two arrays with first element of first array to first element of second element of second array
+// const newArray = arr1.map((item, index) => {
+//      return item + arr2[index]
+// })
+
+// console.log(newArray)
+// const newArray = arr1.map((item, index) => {
+//      return item / arr2[index]
+// })
+
+// console.log(newArray)
+
+// let text = '{"employees":[' +
+// '{"firstName":"John","lastName":"Doe" },' +
+// '{"firstName":"Anna","lastName":"Smith" },' +
+// '{"firstName":"Peter","lastName":"Jones" }]}';
+// const obj=JSON.parse(text)
+// console.log(obj)
+
+// const list1=[10,5,11,45,100]
+// const list2=[20,25,55,41,"12"]
+
+// const finalList=list2.map((item,index)=>{
+//      if(list2.length==list1.length){
+//      return item*list1[index]
+//      }
+// })
+// console.log(finalList)
+let message = "Hello world!";
+let x = message.toUpperCase();
+console.log(x)
+
+const data = ["welcome", "everyone", "fake"]
+// const data2=data.map(arr=>
+//      arr.toUpperCase())
+// console.log(data2)
+
+const arr = data.map((err) => {
+
+     return err.toUpperCase()
+})
+
+console.log(arr)
+
+const  promises=new Promise(function(resolve,reject){
+     const x="Himalayan Mountain";
+     const y="Himalayan Mountains";
+     if(x==y){
+          resolve();          
+     }
+     else{
+          reject()
+     }
+})
+promises.then((function (){
+     console.log("ready to visit")
+})).catch(function(){
+console.log("not able to climb")
+})
 
