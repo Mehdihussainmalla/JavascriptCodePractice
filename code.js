@@ -1,4 +1,19 @@
-// // console.log("hello")
+//..........var............//
+//..var is functional scope or global scope. var can be decalre and can be reassigned also. var is the old version of the javascript
+//..sometimes need to change the value so the var keyword is used to declare a variable. 
+
+
+//...........let..............//
+//..let is block scoped variable and can be functionalised within the block only. let can be decalre at first and initialise 
+//...at later stage. let can be reassigned also within the block.....//
+//.............const............//
+//.....const is same as let that is block scope but the difference is const can be decalre and intialise at one ....
+//.......const cannot be redecalre and cannot be initialised later..///////
+
+
+
+
+// console.log("hello")
 // //   const cal=(calcu,a,b)=>{
 // //     switch (calcu) {
 // //         case "add":
@@ -412,9 +427,9 @@
 // // //     console.log(c)
 // // }
 // // console.log(squareroot(64))
-
-// // const x= Math.floor( Math.random()*11)
-// // console.log(x)
+//..............math.floor is used to round off the integer to the nearest value.........//
+// const x= Math.floor( Math.random()*11)
+// console.log(x)
 
 // // let x = "sss";
 // // console.log(Boolean(x));
@@ -544,7 +559,7 @@
 // }
 // even(50)
 // .......reduce method.............//
-// const reduce = [140, 120, 4]
+const reduce = [140, 120, 4]
 // console.log(reduce.reduce(myFunc))
 //.............reduce function another methoad.........//
 // function myFunc(total, num) {  //......here total is previous value, and num is current value../
@@ -555,14 +570,16 @@
 //      return reduce.reduce(myFunc)
 // }
 // console.log(checkReduce(myFunc, reduce))
-// function myFunc(total, num) {  //......here total is previous value, and num is current value../
-//      return total * num;        //.............all arithmetic operations can be performed ............//
-// }
 
-// const checkReduce = (myFunc, reduce) => {
-//      return reduce.reduce(myFunc)
+// const reduceArray = [140, 120, 4]  //.....the reduce method returns the total value according to the arthmetic operations//
+// function myFunc(total, num) {  //......here total is previous value, and num is current value../
+//      return total + num;        //.............all arithmetic operations can be performed ............//
+//  }
+
+// const checkReduce = (myFunc, reduceArray) => {
+//      return reduceArray.reduce(myFunc)
 // }
-// console.log(checkReduce(myFunc, reduce))
+// console.log(checkReduce(myFunc, reduceArray))
 
 
 ///...........here in below code the reduce function is used for the array of arrays
@@ -662,12 +679,12 @@
 
 // const x = function (a, b) {
 //      const d = Math.pow(a, b)
-//      console.log(d)
+//      console.log("the exponentaial value of two numbers are:", d)
 //      c = a * b
 //      return c
 
 // }
-// console.log(x(2, 5))
+// console.log("the multiplication is:", x(2, 5))
 
 // function check(x, y) {  ///............if place holders are two and argument is one how it works
 //      if (y === undefined) {
@@ -1459,7 +1476,7 @@
 // const string = "welcome, back, to,the poius home";
 // const newString = string.toUpperCase();
 // console.log(newString);
-// console.log(newString.slice(5))
+// // console.log(newString.slice(5))
 // console.log(newString.substr(4))
 
 // const fun=(...args)=>{
@@ -1474,21 +1491,334 @@
 // let x=fun(10,5,45,87)
 // console.log(x)
 
-const forIn = (...values) => {
+// const forIn = (...values) => {
 
-     let sum = 0;
-     for (let x in values) {
-          sum =sum+values[x]
-     }
-     return sum
+//      let sum = 0;
+//      for (let x in values) {
+//           sum =sum+values[x]
+//      }
+//      return sum
 
-}
-const addition = forIn(10, 20, 45, 70, 75)
-console.log(addition)
+// }
+// const addition = forIn(10, 20, 45, 70, 75)
+// console.log(addition)
 
 
 //...............the difference between the for in and for of is that...
 // ..for in iterates the keys of the array or data
 //...while as the for of iterates the values of an array or data
+// const radius = [20, 10, 14, 15, 70, 30]
+// const area = (radius) => {
+//      return Math.PI * radius * radius
+// }
+// const circumference = (radius) => {
+//      return Math.PI * 2 * radius
+// }
+// const diameter = (radius) => {
+//      return 2 * radius
+// }
+// const calculate = (radius, logic) => {
+//      let output = [];
+//      for (let i = 0; i < radius.length; i++) {
+//           output.push(logic(radius[i]))
+//      }
+//      return output
+// }
+// console.log(calculate(radius, area))
+// console.log("the circumference is", calculate(radius, circumference))
+// console.log(calculate(radius, diameter))
+
+//........how to find the area of a circle unsing one function only.............//
+// const areaCircle=(radius)=>{
+//      let output=[];
+//      for(let i=0;i<radius.length;i++)
+//      {
+//            output.push(Math.PI*radius[i]*radius[i])
+//      }
+//      return output
+
+// }
+// console.log(areaCircle(radius))
+
+
+// const add = (a, b) => {
+//      const c = a + b;
+//      return c
+
+// }
+// console.log("the sum is :", add(4, 5))
+
+// const arithmetic={
+//      add:(a,b)=>{
+
+//           return a+b
+//      },
+//      multiple:(a,b)=>{
+//           return a*b
+//      },
+//      subtract:(a,b)=>{
+//           return a-b;
+//      },
+//      divide:(a,b)=>{
+//           return a/b;
+//      },
+
+// }
+
+// const calculate=arithmetic.add(40,10);
+// console.log(calculate)
+
+//.......HOISTING............//
+// let a;
+// console.log(a)
+// checkHoist("this practice is for")
+// function checkHoist(check){
+//      a=10
+//      console.log(a)
+// console.log(`${check} checking for the hoisting function`)
+// }
+
+// checkHoist("this practice is for")
+
+// console.log(a)
+// function checkHoist(check){
+//      let a;a=10
+//   console.log(a)
+
+// console.log(`${check} checking for the hoisting function`)
+// // return a
+// }
+// let firstName;
+// let lastName
+// console.log(`${firstName} + ${lastName}`)
+//  firstName="mehdi Hussain";
+//  lastName="Malla"
+//  console.log(`${firstName}  ${lastName}`)
+// function varTest() {
+//      let x = 1;
+//      {
+//        let x = 2;  // same variable!
+//        console.log(x);  // 2
+//      }
+//      console.log(x);  // 2
+//    }
+//    varTest()
+
+// //.........variable hoisting onluy for var variables
+// x = 9
+// console.log(x)
+// var x;
+
+//........hoisting for the arrow function is not working only working for the simple functions../////    
+// myfunc()
+
+// const myfunc=()=>{
+// console.log('check hoisting for arrow function')
+// }
+
+//............hoisting works for the callback functions also.....//
+
+
+// myfunc()
+// function myfunc() {
+
+//      setTimeout(() => {
+//           console.log("welcome to the world")
+//      }, 3000);
+//      console.log("check for hoisting for simple function")
+
+
+// }
+// const radius = [10, 20, 25]
+// function calculate(radius) {
+//      let output = [];
+//      for (let i = 0; i < radius.length; i++) {
+//           output.push(radius[i] * radius[i])
+//      }
+//      return output
+// }
+// console.log(calculate(radius))
+
+// const numberOne=[10,21,3,4]
+// const numberTwo=[5,6,17,8]
+// const newNumber=[...numberOne,...numberTwo]
+// console.log(newNumber)
+
+
+// const sorting=newNumber.sort(function(a,b){
+//      return a-b
+// })
+// console.log(sorting)
+
+
+//..........how to add multiple arrays of multiple elements ...........//
+// const firstArray = [1, 4, 7, 8, 12];
+// const secondArray = [20, 10, 30, 50, 1];
+// const thirdArray = [20, 10, 30, 50, 4];
+// // console.log(typeof firstArray)
+// const finalArray = [];
+// if (firstArray.length === secondArray.length && thirdArray.length === firstArray.length) {
+//      for (let i = 0; i < firstArray.length; i++) {
+//           finalArray[i] = firstArray[i] + secondArray[i] + thirdArray[i]
+//      }
+//      console.log(finalArray)
+// }
+// else {
+//      console.log("length of an array not same")
+// }
+
+// const firstArray = [1, 4, 7, 8, 12];
+// const secondArray = [20, 10, 30, 50, 1];
+// const myFun = (firstArray, secondArray) => {
+//      let output = [];
+//      if (firstArray.length === secondArray.length) {
+//           for (let i = 0; i < firstArray.length; i++) {
+//                output[i] = firstArray[i] + secondArray[i]
+
+//           }
+//           return output
+
+//      }
+//      else {
+//           console.log("no matching length ")
+//      }
+// }
+
+// console.log(myFun(firstArray, secondArray))
+
+// let randomNumber = Math.floor(Math.random()) + 1;
+// console.log(randomNumber)
+
+//..........an array is a single object that contains multiple values......//
+
+//.........conversion strings to numbers
+// const a = "14";
+// console.log(a)
+// console.log(typeof a)
+// console.log(typeof Number(a))
+
+// const b = "mehdi";
+// console.log(b)
+// console.log(typeof b)
+// console.log(Number(b))
+
+// const abc = "14";
+// console.log(abc)
+// console.log(typeof abc);
+// console.log(typeof String(abc))
+
+
+// const data = 3 ** 3;
+// console.log(data)
+// const  array=[]
+//  array.push(Math.pow(2,5))
+//  console.log(array)
+
+//......how to finnd the same words in an array...////
+//  const alphabetic=()=>{
+//      const strings=["mehdi", "mehdi","malla","dar"]
+//      let newArr= strings.filter(words=>words==="mehdi"
+//      )
+//      console.log(newArr)
+//  }
+//  alphabetic()
+
+
+//.............how to find even or odd using filter function........//
+// const data=[2,8,14,16,11,13]
+// const evenNumber=(data)=>{
+
+// const output=data.filter(even=>even%2===0)
+// console.log(output)
+// }
+// evenNumber(data)
+
+// const oddNumber =(data)=>{
+//      const output=data.filter((odd=>odd%2===1))
+//      console.log(output)
+
+// }
+
+// oddNumber(data)
+///........................end.........//
+
+const data = ["mehdi", "mehdi", "malla", "dar"]
+
+const cal = (data) => {
+     data.map((item) => {
+          if (item === "mehdi") {
+               console.log(item)
+          }
+     })
+}
+cal(data)
+
+
+
+const splitProcess = () => {
+
+     const details = "how are you today , my dear friend"
+     const x = details.split(" ")   //........split() method is used to return an array of strings that is formed after the splitting method
+     console.log(x)
+}
+splitProcess()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
