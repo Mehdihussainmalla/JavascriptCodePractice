@@ -559,7 +559,7 @@
 // }
 // even(50)
 // .......reduce method.............//
-const reduce = [140, 120, 4]
+// const reduce = [140, 120, 4]
 // console.log(reduce.reduce(myFunc))
 //.............reduce function another methoad.........//
 // function myFunc(total, num) {  //......here total is previous value, and num is current value../
@@ -1491,7 +1491,23 @@ const reduce = [140, 120, 4]
 // let x=fun(10,5,45,87)
 // console.log(x)
 
+// const numbersOne = [1, 2, 3];
+// const numbersTwo = [4, 5, 6];
+// const numbersCombined = {...numbersOne, ...numbersTwo};
+
+// console.log(numbersCombined)
+
+
+// const add = () => {
+//     console.log('hello')
+// }
+
+// const dd = {
+//     a:'a',
+//     b:'b',
+// }
 // const forIn = (...values) => {
+//     console.log(values)
 
 //      let sum = 0;
 //      for (let x in values) {
@@ -1500,45 +1516,45 @@ const reduce = [140, 120, 4]
 //      return sum
 
 // }
-// const addition = forIn(10, 20, 45, 70, 75)
+// const addition = forIn(add, dd)
 // console.log(addition)
 
 
 //...............the difference between the for in and for of is that...
 // ..for in iterates the keys of the array or data
-//...while as the for of iterates the values of an array or data
-// const radius = [20, 10, 14, 15, 70, 30]
-// const area = (radius) => {
-//      return Math.PI * radius * radius
-// }
-// const circumference = (radius) => {
-//      return Math.PI * 2 * radius
-// }
+const radius = [20, 10, 14, 15, 70, 30]
+const area = (radius) => {
+     return Math.PI * radius * radius
+}
+const circumference = (radius) => {
+     return Math.PI * 2 * radius
+}
 // const diameter = (radius) => {
 //      return 2 * radius
 // }
-// const calculate = (radius, logic) => {
-//      let output = [];
-//      for (let i = 0; i < radius.length; i++) {
-//           output.push(logic(radius[i]))
-//      }
-//      return output
-// }
-// console.log(calculate(radius, area))
-// console.log("the circumference is", calculate(radius, circumference))
+const calculate = (radius, logic) => {
+     let output = [];
+     for (let i = 0; i < radius.length; i++) {
+          output.push(logic(radius[i]))
+     }
+     return output
+}
+console.log(calculate(radius, area))
+console.log("the circumference is", calculate(radius, circumference))
 // console.log(calculate(radius, diameter))
 
 //........how to find the area of a circle unsing one function only.............//
-// const areaCircle=(radius)=>{
-//      let output=[];
-//      for(let i=0;i<radius.length;i++)
-//      {
-//            output.push(Math.PI*radius[i]*radius[i])
-//      }
-//      return output
+// const radius = [20, 10, 14, 15, 70, 30]
+const areaCircle=(radius)=>{
+     let output=[];
+     for(let i=0;i<radius.length;i++)
+     {
+           output.push(Number(( Math.PI*radius[i]*radius[i]).toFixed(2)))
+     }
+     return output
 
-// }
-// console.log(areaCircle(radius))
+}
+console.log(areaCircle(radius))
 
 
 // const add = (a, b) => {
@@ -1715,7 +1731,7 @@ const reduce = [140, 120, 4]
 //  console.log(array)
 
 //......how to finnd the same words in an array...////
-//  const alphabetic=()=>{
+//   const alphabetic=()=>{
 //      const strings=["mehdi", "mehdi","malla","dar"]
 //      let newArr= strings.filter(words=>words==="mehdi"
 //      )
@@ -1780,7 +1796,7 @@ const reduce = [140, 120, 4]
 
 // const data = ["mehdi", "hussain", "mehdi"]
 // console.log(data.includes("mehdi"))  //............includes is used to check whether the specific entry is in the array or in an object../
-const array = [124, 254, 140, 548, 1479, 9875, 15546, 12012, 14521, 102369]
+// const array = [124, 254, 140, 548, 1479, 9875, 15546, 12012, 14521, 102369]
 
 // function evenOdd(array) {
 //      const odds=[];
@@ -1816,11 +1832,10 @@ const array = [124, 254, 140, 548, 1479, 9875, 15546, 12012, 14521, 102369]
 // console.log(data.endsWith("there"))
 // console.log(data.indexOf("there"))  //........indexOf provides the position of a string.../
 
-const stringType = 'mozilla';
-// console.log(browserType.slice(0, 5));
-
-const update = stringType.replace("moz", "Van"); //........here replace used to replace the prefix of a string...//
-console.log(update)
+// const stringType = 'mozilla';
+// // console.log(browserType.slice(0, 5)); 
+// const update = stringType.replace("moz", "Van"); //........here replace used to replace the prefix of a string...//
+// console.log(update)
 
 
 
