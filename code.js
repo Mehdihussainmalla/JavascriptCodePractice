@@ -1742,26 +1742,101 @@ const reduce = [140, 120, 4]
 // oddNumber(data)
 ///........................end.........//
 
-const data = ["mehdi", "mehdi", "malla", "dar"]
+// const data = ["mehdi", "mehdi", "malla", "dar"]
 
-const cal = (data) => {
-     data.map((item) => {
-          if (item === "mehdi") {
-               console.log(item)
-          }
-     })
-}
-cal(data)
+// const cal = (data) => {
+//      data.map((item) => {
+//           if (item === "mehdi") {
+//                console.log(item)
+//           }
+//      })
+// }
+// cal(data)
 
 
 
-const splitProcess = () => {
+// const splitProcess = () => {
 
-     const details = "how are you today , my dear friend"
-     const x = details.split(" ")   //........split() method is used to return an array of strings that is formed after the splitting method
-     console.log(x)
-}
-splitProcess()
+//      const details = "how are you today , my dear friend"
+//      const x = details.split(" ")   //........split() method is used to return an array of strings that is formed after the splitting method
+//      console.log(x)
+// }
+// splitProcess()
+
+// const array = [124, 254, 140, 548, 1479, 9875, 15546, 12012, 14521, 102369]
+// const evenFunction = (array) => {
+//      let output = array.filter(num => num % 2 === 0)
+//      console.log(output)
+
+// }
+// evenFunction(array)
+
+// const oddNumbers=(array)=>{
+//      let result=array.filter(odd=>odd%2===1)
+//      console.log(result)
+
+// }
+// oddNumbers(array)
+
+// const data = ["mehdi", "hussain", "mehdi"]
+// console.log(data.includes("mehdi"))  //............includes is used to check whether the specific entry is in the array or in an object../
+const array = [124, 254, 140, 548, 1479, 9875, 15546, 12012, 14521, 102369]
+
+// function evenOdd(array) {
+//      const odds=[];
+//      array.forEach(element => {
+//          if(element % 2 !== 0){
+//               odds.push(element) 
+//          }
+//      });
+//      return odds
+// }
+// console.log(evenOdd(array))
+//............find odd even using for loop and if else statement............//
+// const myFun = (array) => {
+//      for (let i = 0; i < array.length; i++) {
+//           if (array[i] % 2 === 0) {
+//                console.log("the even numbers are", array[i])
+//           }
+//           else if (array[i] % 2 === 1) {
+//                console.log("the odd numbers are", array[i])
+//           }
+//           else {
+//                console.log("no numbers exist")
+//           }
+//      }
+
+// }
+// myFun(array)
+
+//.....startwith & endswith function is used to return true or false if the passing parameter with functions are in a string
+// const data = "where there"
+// const d = data.startsWith("where");
+// console.log(d)
+// console.log(data.endsWith("there"))
+// console.log(data.indexOf("there"))  //........indexOf provides the position of a string.../
+
+const stringType = 'mozilla';
+// console.log(browserType.slice(0, 5));
+
+const update = stringType.replace("moz", "Van"); //........here replace used to replace the prefix of a string...//
+console.log(update)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
