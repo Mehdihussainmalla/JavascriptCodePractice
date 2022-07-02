@@ -133,10 +133,10 @@
 // // console.log(z.sort())//  sorts array in an alphebatic order
 // // console.log(z.reverse())// it reverse the array from last to first
 
-// // const points=[18,12,5,7,0,11,9]
-// // // console.log(points.sort(function(a, b)
-// // // {return a - b}
-// // // ));
+// const points=[18,12,5,7,0,11,9]
+// // console.log(points.sort(function(a, b)
+// // {return a - b}
+// // ));
 // // function cal(a,b){  //...............here, this function is a comparison function..........//
 // //     return a-b;
 // // }
@@ -1522,39 +1522,39 @@
 
 //...............the difference between the for in and for of is that...
 // ..for in iterates the keys of the array or data
-const radius = [20, 10, 14, 15, 70, 30]
-const area = (radius) => {
-     return Math.PI * radius * radius
-}
-const circumference = (radius) => {
-     return Math.PI * 2 * radius
-}
+// const radius = [20, 10, 14, 15, 70, 30]
+// const area = (radius) => {
+//      return Math.PI * radius * radius
+// }
+// const circumference = (radius) => {
+//      return Math.PI * 2 * radius
+// }
 // const diameter = (radius) => {
 //      return 2 * radius
 // }
-const calculate = (radius, logic) => {
-     let output = [];
-     for (let i = 0; i < radius.length; i++) {
-          output.push(logic(radius[i]))
-     }
-     return output
-}
-console.log(calculate(radius, area))
-console.log("the circumference is", calculate(radius, circumference))
-// console.log(calculate(radius, diameter))
+// const calculate = (radius, logic) => {
+//      let output = [];
+//      for (let i = 0; i < radius.length; i++) {
+//           output.push(logic(radius[i]))
+//      }
+//      return output
+// }
+// console.log(calculate(radius, area))
+// console.log("the circumference is", calculate(radius, circumference))
+// // console.log(calculate(radius, diameter))
 
 //........how to find the area of a circle unsing one function only.............//
 // const radius = [20, 10, 14, 15, 70, 30]
-const areaCircle=(radius)=>{
-     let output=[];
-     for(let i=0;i<radius.length;i++)
-     {
-           output.push(Number(( Math.PI*radius[i]*radius[i]).toFixed(2)))
-     }
-     return output
+// const areaCircle=(radius)=>{
+//      let output=[];
+//      for(let i=0;i<radius.length;i++)
+//      {
+//            output.push(Number(( Math.PI*radius[i]*radius[i]).toFixed(2)))
+//      }
+//      return output
 
-}
-console.log(areaCircle(radius))
+// }
+// console.log(areaCircle(radius))
 
 
 // const add = (a, b) => {
@@ -1837,11 +1837,326 @@ console.log(areaCircle(radius))
 // const update = stringType.replace("moz", "Van"); //........here replace used to replace the prefix of a string...//
 // console.log(update)
 
+// raw string which is not assigned to any variable
+// let a=-10;
+// let c= Math.abs(a)
+// console.log(c)
+//....math.abs is used to convert negative value into positive value...//
+//..............
+//how to change the string inputs to the numbers../////////
+//...............parseInt ,Number r used to change string into numberic values
+// let a="10";
+// let b="20";
+// let c=parseInt (a)+Number (b)
+// console.log(c)
+
+// for loop
+// increasing order../////////////////
+// const fun=()=>{
+//     for (count =0;count <10;count ++)
+//     {
+//         console.log(count,"welcome")
+//     }
+//     // ...decrement order......//
+//     for (count =10;count >0;count --)
+//     {
+//         console.log(count,"welcome")
+//     }
+// }
+// fun()
+
+// let a=0
+// while (a<20) {
+//     console.log(a)
+
+//     a++;
+// }
+
+// const fun=()=>{
+//     for (count =0;count <10;count ++){
+//   if(count ==5)
+//   {
+//     continue;//...............is used to not to display the output for that conditional statement..//
+//   }  
+//         console.log(count)
+//     }
+
+// }
+// fun()
 
 
+// for (count =0;count <10;count ++){
+//     if (count %2==0){
+//         continue;  //.........continue is used to skip the specific condition
+//     }
+//     console.log(count)
+// }
+// for (count =0;count <10;count ++){
+//     if (count==5){
+//         break;  //.........break is used to skip the rest of the statements
+//     }
+//     console.log(count)
+// }
+
+// //................check whther an array exists or not
+
+// const arr=["qwerty","roast","polarism"]
+// // console.log(Array.isArray(arr))
+// //.............Array.isArry  provides a boolean value that a vaiable is an array or not...
+// const data=arr.valueOf();
+// // console.log(data)
+// const formatData=arr.join(" | ");
+// console.log(formatData)
+// //...............join method is used to provide the formatted data of an array
 
 
+//.................indexof is used to get the index of an array....//
+// let arr=["hey","you","welcome","here"];
+// // console.log(arr.indexOf("you"));
+// const clock = () => {
+//     let date = new Date();
+//     let a = date.getHours();
+//     let b = date.getMinutes();
+//     let c = date.getSeconds();
+//     if (a > 12) {
+//         a = a - 12;
+//         //  console.log(a)
+//     }
+//     a = a < 10 ? "0" + a : a;
+//     b = b < 10 ? "0" + b : b;
+//     c = c < 10 ? "0" + c : c;
 
+
+//     let result = a + ":" + b + ":" + c;
+//     console.log(result)
+//     setTimeout(clock, 1000);
+
+// }
+// clock()
+
+// console.log(Math.ceil(3.0568));  //.......Math.ceil provides the round off only upper value here the result is 4
+// console.log(Math.ceil(3.0)); //..............the output will be 3 not 4 
+// console.log(Math.floor(3.758)); //...........floor returns the lower value only opp of ceil
+// console.log(Math.floor(Math.random() * 10000));//.............this is how to generate the random number
+// console.log(Math.ceil(Math.random() * 10000));
+// const data = () => {
+//  let num = 2;
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(num + " x " + i + " =", i * num)//..........here nultiples of any num can be printed
+//     }
+// }
+// data()
+
+// const looping = () => {
+//     for (let i = 0; i <= 5; i++) {
+//         for (let j = 1; j <= i; j++) {
+//             console.log("*")
+
+//         }
+//         console.log(i)
+//     }
+// }
+// looping()
+//.....how to use diffrent objects or elements in an array/////here function works as an object
+// const data=["mehdi",90,{name:"hussain"},function(){
+//     console.log("malla")
+// }]
+
+// console.log(data)
+
+// data[3]()
+
+
+// const words='my name is mehdi hussain malla';
+// console.log(words)
+
+// let data=words.split(" ")//..............split method is used to change a string into an array
+// console.log(data)
+
+//...........destrcuturing of an array........................//
+// const words='my name is mehdi hussain malla';
+//  const data=words.split(" ");
+//  let [a,b,c,...d]=data;
+// console.log(d)
+
+// const data=[10,12,14,10,2,15];//.........for each data to get the each element 
+// //..................also for each contains the annonyms function
+// data.forEach(function(value){
+//     console.log(value**2)
+// })
+
+// const data = [10, 12, 14, 10, 2, 15];
+// data.filter((n) => {
+//     // if (n % 2 === 0) {
+//     //     console.log(n)
+//     // }
+// })
+
+// let result = data.map((n) => n + 2)
+// console.log(result)
+
+// let final = data.reduce((a, b) => a - b)
+// console.log(Math.abs(final))//...........math.abs used for changing negative to positve value
+
+
+// const details =
+//     [{ name: "muntazir", address: "payeen", pincode: 190123 },
+//     { name: "mehdi", address: "hanjiwera", pincode: 193121 },
+//     { name: "hussain", address: "pattan", pincode: 789456 },
+//     { name: "malla", address: "kashmir", pincode: 412010 }]
+
+// const fun = (data) => {
+//     // console.log(data)
+//     let sum = data.map((element, i) => {
+//         return element?.name;
+//         // console.log(raw, i);
+//     })
+//     return sum;
+// }
+// console.log(fun(details))
+
+//............Set() method
+//.....set method is used to not to return the duplicate value ....return one elenet if it is multiple times
+
+// const data=new Set("bookkeeper")
+// console.log(data)
+
+// const data = new Set();
+// data.add(2);
+// data.add(10);
+// data.add(2);
+// data.add("mehdi");
+// data.add("Hussain");
+// data.add("mehdi");
+//  data.forEach((n) => {
+//     console.log(n)
+// })
+// console.log(data.has(2)) //....................has method provides a boolean value and check whether the
+//......element is present in an array or set
+
+
+//......................Map() method...///2nd one
+
+// let map=new Map();
+// map.set("mehdi", "hussain")
+// map.set("mehdi", "hussain") ////////////.set () is used to add the values but it replaces the duplicate values
+// for (let [k,v] of map)
+// console.log(k ," : ", v)
+// let num = 1;
+// function show() {
+//     console.log("mehdi", num);
+//     num++;
+//     show() //.........calling a function inside a function itself it will contineously run and we can check the length of a stack also 
+// }
+// show()
+
+// swap of two variables using third variable
+
+// let a = 20;
+// let b = 10;
+// let temp = a;
+// a = b;
+// b = temp;
+// console.log(a, b)
+
+//..........swap of two numbers using array destructuring method
+
+// let a = 20;
+// let b = 45;
+
+// [a, b] = [b, a];
+// console.log(`the value of a is now ${a} and the value of b is now ${b}`)
+
+
+// object destructring
+//const bioData={
+//     name:"mehdi ",
+//     address:"hanjiwera ",
+//     age:24
+// }
+
+// let {name,age,address}=bioData;
+// // console.log(age)
+// const arr=[1,2,3]
+// const arr2=[3,2,45]
+// console.log(arr+arr2)
+// let a=10;
+// let b=20;
+// b=b-a;
+// a=a+b;
+// // [a,b]=[b,a];
+// console.log(a,b)
+
+const data = [10, 54, 2, 5, 8, 52];
+// console.log(data.sort(function (a, b)
+// {
+//     return a-b
+// }
+// ));
+// const reverse = (data) =>{
+//     const revrs = [] 
+//     for (let i = data.length-1; i>=0; i--) {
+//         revrs.push(data.pop())
+
+//     }
+//     return revrs
+// }
+
+// console.log(reverse(datas))
+
+
+//   console.log(data);
+
+// const sortArr = (data) => {
+
+//     var output = [];
+//     var inserted;
+
+//     for (var i = 0, ii = data.length ; i < ii ; i++){
+//       inserted = false;
+//       for (var j = 0, jj = output.length ; j < jj ; j++){
+//         if (data[i] < output[j]){
+//           inserted = true;
+//           output.splice(j, 0, data[i]);
+//           break;
+//         }
+//       }
+
+//       if (!inserted)
+//         output.push(data[i])
+//     }
+
+//     return output
+// }
+
+// console.log(sortArr(data))
+//................how to pass default parameters..............//
+// const mult=(a,b=10)=>{
+// console.log(a*b)
+// }
+// mult(4)
+
+
+//........................passing multiple arguments and use operations.....//
+
+// const operation=(...inputs)=>{
+// // console.log(...inputs)
+// let data=inputs.filter((item)=>{
+//       return item %2===0
+//     })
+//     console.log(data)
+// }
+// operation(10,3,5,7,9,10,20)
+
+// const operation = (...inputs) => {
+//   // console.log(...inputs)
+//   let total = 0;
+//   for (let i of inputs) {
+//     total += i
+//   }
+//   console.log(total)
+// }
+// operation(10, 3, 5, 7, 9, 10, 20)
 
 
 
